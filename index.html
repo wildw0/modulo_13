@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebac Gaming Store</title>
+    <link rel="stylesheet" href="/lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+
+    <style>
+        .nav-link  {
+            color: #ffffff;
+            font-weight: bolder;
+        }
+        .nav a:hover {
+            color: black;
+        }
+
+        .card-body{
+            color: #c0702f;
+        }
+
+        .card-body h4, .card-header{
+            color: #fd6614;
+            font-weight: bold;
+        }
+        body {
+            background-color: rgb(225, 228, 248);
+        }
+
+        .dropdown-menu {
+            width: 300px;
+            height: 500px;
+            background-color:rgb(225, 228, 248);
+            border: 1px solid black;
+        }
+        .dropdown-menu .form-control {
+            width: 90%;
+            margin-left: 5%;
+            background-color:rgb(235, 236, 246);
+            border: 1px solid #0d6efd;
+        }
+
+        .dropdown-menu .form-label {
+            width: 90%;
+            margin-left: 5%;
+            font-weight: bold;
+        }
+
+        .dropdown-menu .form-check {
+            width: 90%;
+            margin-left: 5%;            
+        }
+
+        .dropdown-menu .btn {
+            width: 90%;
+            margin-left: 5%;
+            font-weight: bold;           
+        }
+    </style>
+    
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-dark bg-primary text-white">
+            <div class="container">
+                <h1>Ebac Gaming Store</h1>
+                <nav class="navbar border border-dark d-inline-block">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#produtos">Jogos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mapa">Localização</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" >Contato</a>
+                            <ul class="dropdown-menu dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                <form class="w-100">
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <input type="text" class="form-control" id="nome" />
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" name="form-control" class="form-control" id="email">
+                                    <div class="mb-3">
+                                    <label for="Textarea" class="form-label">Mensagem:</label>
+                                    <textarea class="form-control" id="Textarea" rows="3"></textarea>
+                                    <label for="game" class="form-label">Jogo(s) de interesse:</label>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Baldur's Gate 3</label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Counter Strike</label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Cyberpunk 2077</label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Raft</label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">GTA</label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Stardew Valley</label>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm" type="button">Enviar</button>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container p-4">
+        <section id="produtos margin">
+            <h2>Jogos</h2>
+                <div class="row row-4 row-cols-lg-3 row-cols-md-2 g-2">
+                    <div class="col-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Baldur's Gate 3
+                            </div>
+                            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000"  class="carousel-item active">
+                                        <img class="d-block w-100" src="/Baldur's Gate/baldursgate.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/Baldur's Gate/bg.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/Baldur's Gate/bg2.jpg" />                                        
+                                    </div>
+                                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" >
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                                    </div>
+                                </div>
+                            <div class="card-body">
+                                <h4 class="card-title">R$75,90</h4> 
+                                <h5 class="card-subtitle"><del>R$199,99</del></h5>
+                                <p class="card-text">
+                                    Reúna seu grupo e volte aos Reinos Esquecidos em uma história de amizade e traição, sacrifício e sobrevivência, e tentação pelo poder absoluto.
+                                </p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div class="col-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Counter Strike CS:GO
+                            </div>
+                            <div id="carousel-exemplo2" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000"  class="carousel-item active">
+                                        <img class="d-block w-100" src="/CS/header.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/CS/CS2.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/CS/CS3.jpg" />                                        
+                                    </div>
+                                    <button data-bs-target="#carousel-exemplo2" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button data-bs-target="#carousel-exemplo2" data-bs-slide="next" class="carousel-control-next" >
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-exemplo2" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo2" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo2" data-bs-slide-to="2"></button>
+                                    </div>
+                                </div>
+                            <div class="card-body">
+                                <h4 class="card-title">R$60,00</h4> 
+                                <h5 class="card-subtitle"><del>R$99,99</del></h5>
+                                <p class="card-text">
+                                    O Counter-Strike CS:GO contém novos mapas, personagens e armas, além de contar com versões atualizadas de conteúdos do CS clássico.
+                                </p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Cyberpunk 2077
+                            </div>
+                            <div id="carousel-exemplo3" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000"  class="carousel-item active">
+                                        <img class="d-block w-100" src="/cyberpunk/header.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/cyberpunk/cb1.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/cyberpunk/cb2.jpg" />                                        
+                                    </div>
+                                    <button data-bs-target="#carousel-exemplo3" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button data-bs-target="#carousel-exemplo3" data-bs-slide="next" class="carousel-control-next" >
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-exemplo3" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="2"></button>
+                                    </div>
+                                </div>
+                            <div class="card-body">
+                                <h4 class="card-title">R$175,90</h4> 
+                                <h5 class="card-subtitle"><del>R$229,99</del></h5>
+                                <p class="card-text">
+                                    Reúna seu grupo e volte aos Reinos Esquecidos em uma história de amizade e traição, sacrifício e sobrevivência, e tentação pelo poder absoluto.
+                                </p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Raft
+                            </div>
+                            <div id="carousel-exemplo3" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000"  class="carousel-item active">
+                                        <img class="d-block w-100" src="/raft/header.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/raft/raft2.jpg" />                                        
+                                    </div>
+                                    <div data-bs-interval="3000"  class="carousel-item">
+                                        <img class="d-block w-100" src="/raft/raft3.jpg" />                                        
+                                    </div>
+                                    <button data-bs-target="#carousel-exemplo3" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button data-bs-target="#carousel-exemplo3" data-bs-slide="next" class="carousel-control-next" >
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-exemplo3" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="2"></button>
+                                    </div>
+                                </div>
+                            <div class="card-body">
+                                <h4 class="card-title">R$50,90</h4> 
+                                <h5 class="card-subtitle"><del>R$99,99</del></h5>
+                                <p class="card-text">
+                                    Raft throws you and your friends into an epic oceanic adventure! Alone or together, players battle to survive a perilous voyage across a vast sea!
+                                </p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="col-12">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            GTA
+                        </div>
+                        <div id="carousel-exemplo3" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div data-bs-interval="3000"  class="carousel-item active">
+                                    <img class="d-block w-100" src="/GTA/header (1).jpg" />                                        
+                                </div>
+                                <div data-bs-interval="3000"  class="carousel-item">
+                                    <img class="d-block w-100" src="/GTA/gta2.jpg" />                                        
+                                </div>
+                                <div data-bs-interval="3000"  class="carousel-item">
+                                    <img class="d-block w-100" src="/GTA/gta3.jpg" />                                        
+                                </div>
+                                <button data-bs-target="#carousel-exemplo3" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button data-bs-target="#carousel-exemplo3" data-bs-slide="next" class="carousel-control-next" >
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-exemplo3" class="active" data-bs-slide-to="0"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                        <div class="card-body">
+                            <h4 class="card-title">R$145,50</h4> 
+                            <h5 class="card-subtitle"><del>R$219,90</del></h5>
+                            <p class="card-text">
+                                Dinheiro é o que importa nesta cidade. Resolva os seus problemas financeiros e consiga o que você quiser em Los Santos e Blaine County.
+                            </p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Stardew Valley
+                        </div>
+                        <div id="carousel-exemplo3" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div data-bs-interval="3000"  class="carousel-item active">
+                                    <img class="d-block w-100" src="/stardew valley/header (1).jpg" />                                        
+                                </div>
+                                <div data-bs-interval="3000"  class="carousel-item">
+                                    <img class="d-block w-100" src="/stardew valley/sd2.jpg" />                                        
+                                </div>
+                                <div data-bs-interval="3000"  class="carousel-item">
+                                    <img class="d-block w-100" src="/stardew valley/sd3.jpg" />                                        
+                                </div>
+                                <button data-bs-target="#carousel-exemplo3" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button data-bs-target="#carousel-exemplo3" data-bs-slide="next" class="carousel-control-next" >
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-exemplo3" class="active" data-bs-slide-to="0"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo3" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                        <div class="card-body">
+                            <h4 class="card-title">R$45,90</h4> 
+                            <h5 class="card-subtitle"><del>R$79,99</del></h5>
+                            <p class="card-text">
+                                Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas, você parte para dar início a sua nova vida.
+                            </p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>Adicionado ao carrinho</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>O jogo foi adicionado ao carrinho</p>
+                                </div>
+                                <div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirnar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+            </section>
+        
+        <section class="py-5" id="mapa">
+            <h2>Localização</h2>
+            <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.798961143107!2d28.99067367648954!3d41.073386915412556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6fa019c13df%3A0xe5177d1b08c92f84!2zS3XFn3RlcGUsIFRhbiBTay4sIMWeacWfbGkvxLBzdGFuYnVs!5e0!3m2!1spt-BR!2str!4v1692269592078!5m2!1spt-BR!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="/lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
